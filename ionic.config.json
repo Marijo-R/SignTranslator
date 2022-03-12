@@ -1,0 +1,7 @@
+{
+  "name": "SingTranslator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
