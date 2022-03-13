@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary" class="titulo">
+    <ion-title> Sign Translator </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="dark">
+  <ion-grid>
+    <ion-row class="subtitulos">
+      <ion-col> Español </ion-col>
+      <ion-col size="3">
+        <ion-icon class="icon" name="swap-horizontal-outline"></ion-icon>
+      </ion-col>
+      <ion-col> Lenguaje de Señas </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid class="textarea">
+    <ion-textarea rows="8" cols="20"></ion-textarea>
+    <ion-row class="icon">
+      <ion-col>
+          <ion-button type="button" color="primary">Traducir</ion-button>
+    </ion-col>
+      <ion-col> A </ion-col>
+      <ion-col>
+        <ion-icon name="mic"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="camera"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="subtitulo">
+      <ion-col> Traducción en señas </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="textarea">
+    <ion-textarea rows="10" cols="20"></ion-textarea>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="icon">
+      <ion-col>
+        <ion-icon name="refresh"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="star"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
